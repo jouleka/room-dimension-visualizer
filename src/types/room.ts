@@ -15,6 +15,7 @@ export interface NormalizedDimension {
   y1: number;
   x2: number;
   y2: number;
+  value: number;
 }
 
 export interface RoomData {
