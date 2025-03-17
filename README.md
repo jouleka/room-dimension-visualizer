@@ -1,7 +1,5 @@
 # Room Dimension Visualizer
 
-DocuSketch Task Room Dimension Visualizer.
-
 ## Setup and Run
 
 ### Prerequisites
