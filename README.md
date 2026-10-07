@@ -34,3 +34,12 @@ npm run build
 # or
 yarn build
 ```
+
+## Dependency security
+
+Use Node.js 22.22.2 or newer (CI uses Node.js 24). Install reproducibly with
+`npm ci`, then run `npm audit`, `npm run build`, `npm run lint`, and
+`npm run test:unit -- --run`. Vitest 5 includes the worker and mock-server
+security fixes. Vue and TypeScript lint rules use their official flat configs
+directly, avoiding the unpatched `fast-glob` / `braces` discovery dependency.
+Dependabot checks npm packages and GitHub Actions weekly.
